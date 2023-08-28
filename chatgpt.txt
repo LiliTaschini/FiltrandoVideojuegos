@@ -1,0 +1,10 @@
+El código tiene varios errores. Aquí están los principales:
+
+Los elementos HTML a los que se hace referencia en el código, como el elemento con el id "genero", "desa", "anio" y las clases ".plataf" y ".popularidad", no existen en el código proporcionado. Esto puede ser porque no se han definido en el HTML o no se han incluido en la pregunta.
+
+En la función escucharDOM(), las variables plataforma y popularidad se asignan a elementos plat y pop, respectivamente, dentro de bucles forEach. Esto significa que al final de la función, las variables solo contendrán el último elemento iterado en los bucles. Probablemente se intentaba asignar el elemento actual que desencadenó el evento, pero en su lugar se está sobrescribiendo en cada iteración. Para solucionarlo, se puede eliminar las variables plataforma y popularidad y utilizar this para referirse al elemento actual dentro de la función filtrarJuegos().
+
+En la función filtrarJuegos(), la condición dentro del método filter() está incompleta. Se deben proporcionar condiciones separadas para cada filtro que se esté aplicando. Además, las variables plataforma y popularidad no se actualizan correctamente en la función escucharDOM(). Para solucionarlo, se puede agregar lógica adicional en la función filtrarJuegos() para obtener los valores seleccionados de los elementos del formulario y utilizarlos en las condiciones de filtrado.
+
+
+checked devuelve true o false. Para mis checkbox voy a tener que jugar con es

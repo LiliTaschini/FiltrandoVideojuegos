@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Filtrando</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <div>
+                <h2>Videojuegos</h2>
+                <div class="filtro">
+                    <label for="genero">Género:</label>
+                    <div>
+                        <select id="genero" name="genero">
+                            <option value="todos">Todos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filtro">
+                    <span>Plataformas:</span>
+                    <div class="column">
+                        <label class="plataformas" for="play"><input type="checkbox" class="plataf" id="play" name="play"
+                                value="play"> Play</label>
+                        <label class="plataformas" for="pc"><input type="checkbox" class="plataf" id="pc" name="pc" value="pc"> PC</label>
+                        <label class="plataformas" for="xbox"><input type="checkbox" class="plataf" id="xbox" name="xbox" value="xbox">
+                            Xbox</label>
+                        <label class="plataformas" for="nintendo"><input type="checkbox" class="plataf" id="nintendo" name="nintendo"
+                                value="nintendo">
+                            Nintendo Switch</label>
+                        <label class="plataformas" for="moviles"><input type="checkbox" class="plataf" id="moviles" name="moviles"
+                                value="moviles">
+                            Dispositivos Móviles</label>
+                    </div>
+                </div>
+                <div class="filtro">
+                    <label for="desa">Desarrollador:</label>
+                    <div>
+                        <select id="desa" name="desa">
+                            <option value="todos">Todos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filtro">
+                    <label for="anio">Año de Lanzamiento:</label>
+                    <div>
+                        <select id="anio" name="anio">
+                            <option value="todos">Todos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filtro">
+                    <span>Popularidad:</span>
+                    <div class="column">
+                        <label class="popularidad" for="baja"><input type="checkbox" class="popularidad" id="baja" name="baja" value="baja">
+                            Baja</label>
+                        <label class="popularidad" for="media"><input type="checkbox" class="popularidad" id="media" name="media" value="media">
+                            Media</label>
+                        <label class="popularidad" for="alta"><input type="checkbox" class="popularidad" id="alta" name="alta" value="alta">
+                            Alta</label>
+                        <label class="popularidad" for="malta"><input type="checkbox" class="popularidad" id="malta" name="malta"
+                                value="muyalta">
+                            Muy Alta</label>
+                    </div>
+                </div>
+                <div>
+                    <button class="reset">RESET</button>
+                </div>
+            </div>
+            <div id="container"></div>
+
+        </form>
+    </main>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
