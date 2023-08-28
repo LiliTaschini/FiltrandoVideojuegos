@@ -1,3 +1,0 @@
-algun efecto lindo a las cards
-media querys
-mostrar mensaje cuando no hay resultados
